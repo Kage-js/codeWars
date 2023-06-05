@@ -1,0 +1,19 @@
+function solution(start, finish) 
+{
+  let shelf = start 
+  let jumpCounter = 0
+ do {
+   if(shelf + 3 <= finish){
+     console.log(shelf)
+      console.log(jumpCounter)
+     shelf += 3
+     jumpCounter += 1 
+   } else if (shelf + 3 >= finish) {
+     console.log(shelf)
+     console.log(jumpCounter)
+     shelf += 1 
+     jumpCounter += 1 
+   }
+ } while (shelf != finish)
+   return jumpCounter 
+}
